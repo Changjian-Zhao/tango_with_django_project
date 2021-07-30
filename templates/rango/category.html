@@ -9,7 +9,7 @@
         <h1>{{ category.name }}</h1>
         {% if pages %}
         <ul>
-            for page in pages %}
+            {% for page in pages %}
             <li><a href="{{ page.url }}">{{ page.title }}</a></li>
             {% endfor %}
         </ul>
@@ -20,5 +20,6 @@
         The specified category does not exist.
     {% endif %}
         </div>
+        <a href="/rango/">Index</a>
     </body>
 2</html>
